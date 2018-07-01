@@ -82,7 +82,7 @@ The original wireframes:
 
 |                       Guidelines Index                    |                     Guidelines Page                     |
 | :-------------------------------------------------------: | :-----------------------------------------------------: |
-| <img src="https://i.imgur.com/9xk7RMk.png" width="50%" >  | <img src="https://i.imgur.com/CyCihX5.png"  width="50%" > |
+| <img src="https://i.imgur.com/9xk7RMk.png" width="100%" >  | <img src="https://i.imgur.com/CyCihX5.png"  width="100%" > |
 
 
 
