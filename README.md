@@ -79,14 +79,16 @@ As a maintainer I can:
 ## Wireframes
 
 The original wireframes: 
-  |                       Guidelines Index                        |                     Guidelines Page                     |
-| :-------------------------------------------------------: | :---------------------------------------------------------: |
-| <img src="https://i.imgur.com/9xk7RMk.png" width="50%" > | <img src="https://i.imgur.com/CyCihX5.png"  width="50%" > |
+
+|                       Guidelines Index                    |                     Guidelines Page                     |
+| :-------------------------------------------------------: | :-----------------------------------------------------: |
+| <img src="https://i.imgur.com/9xk7RMk.png" width="50%" >  | <img src="https://i.imgur.com/CyCihX5.png"  width="50%" > |
 
 
 
 Snapshots of what was built:
-  |                       Guidelines Index                        |                
+
+|                       Guidelines Index                        |                
 | :-------------------------------------------------------: | 
 | ![Navigation](https://i.imgur.com/E8LXpkq.png) |
 
