@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Moorfields Clinical Guidance App`,
+    title: `Emergency EyeGuide`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
