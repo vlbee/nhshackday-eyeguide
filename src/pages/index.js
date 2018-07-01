@@ -4,7 +4,6 @@ import styled from 'styled-components'
 
 const StyledH3 = styled.h3`
  margin-left: 1rem;
- text-transform: uppercase;
  text-decoration: none;
 `
 
