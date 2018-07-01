@@ -21,25 +21,21 @@ export default ({ data }) => {
 
 export const query = graphql`
   query IndexQuery {
-        allMarkdownRemark(
-          sort: {order: ASC, fields: [frontmatter___category, frontmatter___title]}
-)
-
-    {
-        edges {
-      node {
-        id
+    allMarkdownRemark(sort: {order: ASC, fields: [frontmatter___category, frontmatter___title]}) {
+      edges {
+        node {
+          id
           fileAbsolutePath
-      frontmatter {
-        title
+          frontmatter {
+            title
             date
-      category
-    }
+            category
+          }
           fields {
-        slug
-      }
+            slug
+          }
+        }
       }
     }
   }
-}
 `;
