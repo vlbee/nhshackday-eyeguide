@@ -1,5 +1,17 @@
 import React from "react";
 import { Wrapper } from "../components/wrapper"
+import Link from 'gatsby-link';
+import styled from "styled-components"
+
+const Back = styled.span`
+ position: fixed;
+ bottom: 1rem;
+ right: 15%;
+ background-color: #fcfcfc;
+ padding: .5rem;
+ text-decoration: underline;
+ font-weight: 700;
+`
 
 export default ({ data }) => {
   const condition = data.markdownRemark;
@@ -9,6 +21,7 @@ export default ({ data }) => {
       <div dangerouslySetInnerHTML={{ __html: condition.tableOfContents }} />
 
       <div dangerouslySetInnerHTML={{ __html: condition.html }} />
+      <Link to={condition.fields.slug}><Back>Back to top</Back></Link>
     </Wrapper>
   );
 };
