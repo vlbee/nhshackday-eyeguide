@@ -1,7 +1,7 @@
 ---
-title: external
+title: Non accidental injury
 date: "2017-08-21"
-category: ["external"]
+category: ["paediatrics"]
 ---
 
 ## KEY ADVICE 
@@ -62,6 +62,3 @@ c.	Explain likely SEs, and what to do if concerned
 2.	Pilocarpine: 
 a.	Do not use intensively
 b.	May be ineffective if IOP>50, can also cause paradoxical A/C shallowing and worsen pupil block if used intensively
-
-
-
