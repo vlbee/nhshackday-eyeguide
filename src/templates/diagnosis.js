@@ -1,16 +1,28 @@
 import React from "react";
+import { Wrapper } from "../components/wrapper"
+import Link from 'gatsby-link';
+import styled from "styled-components"
+
+const Back = styled.span`
+ position: fixed;
+ bottom: 1rem;
+ right: 15%;
+ background-color: #fcfcfc;
+ padding: .5rem;
+ text-decoration: underline;
+ font-weight: 700;
+`
 
 export default ({ data }) => {
   const condition = data.markdownRemark;
-
   return (
-    < div >
+    <Wrapper>
       <h1>{condition.frontmatter.title}</h1>
-
       <div dangerouslySetInnerHTML={{ __html: condition.tableOfContents }} />
 
       <div dangerouslySetInnerHTML={{ __html: condition.html }} />
-    </div >
+      <Link to={condition.fields.slug}><Back>Back to top</Back></Link>
+    </Wrapper>
   );
 };
 
@@ -19,6 +31,9 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
+      }
+      fields {
+        slug
       }
       tableOfContents
       html

@@ -7,8 +7,10 @@
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
+    "gatsby-remark-autolink-headers": "^1.4.19",
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",
+    "normalize.css": "^8.0.0",
     "react-helmet": "^5.2.0",
     "styled-components": "^3.3.3"
   },
