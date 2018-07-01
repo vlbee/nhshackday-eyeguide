@@ -1,28 +1,30 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-
+import { Wrapper } from '../components/wrapper'
 const StyledH3 = styled.h3`
  margin-left: 1rem;
  text-decoration: none;
 `
 
+const Subheading = styled.h4`
+  margin: 0 0 .5rem 2rem;
+`
+
 export default ({ data }) => {
+
   const categories = data.allMarkdownRemark.edges.map(({ node }) => node.frontmatter.category[0]).filter(function (value, index, self) { return self.indexOf(value) === index });
-  console.log("these are categories", categories)
   return (
-    <div>
+    <Wrapper>
+      <h1>Guidelines</h1>
       <div categories={categories}>
         {categories.map(category => {
           return (
             <div>
-              <Link to=""> <StyledH3> {category} </StyledH3> </Link>
+              <StyledH3> {category} </StyledH3>
               <div>
                 {data.allMarkdownRemark.edges.map(({ node }) => {
-                  console.log(node)
-                  console.log({ category })
-                  console.log(node.frontmatter.category)
-                  return (node.frontmatter.category[0] === category) ? <Link to={node.fields.slug}> <h4> {node.frontmatter.title} </h4> </Link> : null
+                  return (node.frontmatter.category[0] === category) ? <Link to={node.fields.slug}> <Subheading> {node.frontmatter.title} </Subheading> </Link> : null
                 })}
               </div>
 
@@ -30,7 +32,7 @@ export default ({ data }) => {
           )
         })}
       </div>
-    </div>
+    </Wrapper>
   );
 };
 

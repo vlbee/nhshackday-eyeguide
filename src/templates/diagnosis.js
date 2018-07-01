@@ -12,6 +12,10 @@ const Back = styled.span`
  text-decoration: underline;
  font-weight: 700;
 `
+const Margin = styled.div`
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+`
 
 export default ({ data }) => {
   const condition = data.markdownRemark;
@@ -22,17 +26,19 @@ export default ({ data }) => {
 
   return (
     <Wrapper>
-      <Link to="/">Home</Link>{
-        breadcrumb.map((item, i) => {
-          const url = currentURL.split(item)[0] + item;
-          return (
-            <span>
-              <span> > </span>
-              <Link key={`key-${i}`} to={url}>{item}</Link>
-            </span>
-          )
-        })
-      }
+      <Margin>
+        <Link to="/">Home</Link>{
+          breadcrumb.map((item, i) => {
+            const url = currentURL.split(item)[0] + item;
+            return (
+              <span>
+                <span> > </span>
+                <Link key={`key-${i}`} to={url}>{item}</Link>
+              </span>
+            )
+          })
+        }
+      </Margin>
       <h1>{condition.frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: condition.tableOfContents }} />
 
