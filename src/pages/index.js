@@ -45,5 +45,4 @@ query IndexQuery {
       }
     }
   }
-}
 `;

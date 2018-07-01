@@ -1,7 +1,7 @@
 ---
-title: medical
+title: drop allergy advice
 date: "2017-08-21"
-category: ["medical"]
+category: ["glaucoma"]
 ---
 
 ## KEY ADVICE 

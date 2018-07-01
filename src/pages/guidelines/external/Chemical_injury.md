@@ -1,7 +1,7 @@
 ---
-title: adnexal
+title: Chemical Injury
 date: "2017-08-21"
-category: ["adnexal"]
+category: ["external"]
 ---
 
 ## KEY ADVICE 
