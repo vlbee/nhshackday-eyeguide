@@ -10,6 +10,7 @@ export default ({ data }) => {
   return (
     <Wrapper>
       <h1>Guidelines</h1>
+
       <TableContents categories={categories} data={data} />
     </Wrapper>
   );
