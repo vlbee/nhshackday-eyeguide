@@ -11,33 +11,37 @@ export default ({ data }) => {
   const categories = data.allMarkdownRemark.edges.map(({ node }) => node.frontmatter.category[0]).filter(function (value, index, self) { return self.indexOf(value) === index });
   console.log("these are categories", categories)
   return (
-    <div categories={categories}>
-      {categories.map(category => {
-        return <Link to=""> <StyledH3> {category} </StyledH3> </Link>
-      })}
+    <div>
+      <div categories={categories}>
+        {categories.map(category => {
+          return <Link to=""> <StyledH3> {category} </StyledH3> </Link>
+        })}
+      </div>
+      <div>
+        {data.allMarkdownRemark.edges.map(({ node }) => {
+          console.log(node)
+          return <Link to={node.fields.slug}> <h4> {node.frontmatter.title} </h4> </Link>
+        })}
+      </div>
     </div>
   );
 };
 
 export const query = graphql`
-  query IndexQuery {
-        allMarkdownRemark(
-          sort: {order: ASC, fields: [frontmatter___category, frontmatter___title]}
-)
-
-    {
-        edges {
+query IndexQuery {
+  allMarkdownRemark(sort: {order: ASC, fields: [frontmatter___category, frontmatter___title]}) {
+    edges {
       node {
         id
-          fileAbsolutePath
-      frontmatter {
-        title
-            date
-      category
-    }
-          fields {
-        slug
-      }
+        fileAbsolutePath
+        frontmatter {
+          title
+          date
+          category
+        }
+        fields {
+          slug
+        }
       }
     }
   }
