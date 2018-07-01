@@ -1,14 +1,16 @@
 ---
-title: Acute Angle Closure Glaucoma
+title: neuro
 date: "2017-08-21"
+category: ["neuro"]
 ---
 
 ## KEY ADVICE 
+
 1.  Mechanism = primary or secondary? 
-a.	Primary (90%) = pupil block or peripheral iris crowding 
-b.	Secondary (10%) = lens induced, causes behind lens
-c.	?Pupil block present: Peripheral iris usually flattens on indentation gonioscopy in pupil block PACG
-d.	If pupil block present, but AC is asymmetrically   shallow centrally, consider secondary causes 
+  a.	Primary (90%) = pupil block or peripheral iris crowding 
+  b.	Secondary (10%) = lens induced, causes behind lens
+ c.	?Pupil block present: Peripheral iris usually flattens on indentation gonioscopy in pupil block PACG
+ d.	If pupil block present, but AC is asymmetrically   shallow centrally, consider secondary causes 
 
 2. Treat relevant cause 
  a.	PACG = see management 
@@ -19,6 +21,8 @@ d.	If pupil block present, but AC is asymmetrically   shallow centrally, conside
 4.	Arrange follow-up at 7 days 
 
  ## MANAGEMENT 
+
+ 
  ### _IMMEDIATE_ 
  
 1. Diamox 500mg IV (if acute + symptoms)

@@ -1,7 +1,7 @@
 ---
-title: More Glaucoma
+title: external
 date: "2017-08-21"
-category: ["glaucoma"]
+category: ["external"]
 ---
 
 ## KEY ADVICE 
