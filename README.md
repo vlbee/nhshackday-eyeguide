@@ -11,7 +11,7 @@ Clinical Guidelines used in NHS Trusts are usually incredibly long, in PDF forma
 ## Our Solution
 
 At the London NHS Hackday 2018, our group created **EyeGuide** a reference app to help users find relevent management clinical guidelines at their fingertips.  It will enable junior doctors, new staff, non-UK trained doctors to manage patients in a standardised, safe way, in the most stress free way possible. 
-  -  It involves quick two click access to the vital information they would need to treat and plan managment for patient with sight or life threatening eye problems.
+  -  It involves quick two click access to the vital information they would need to treat and plan managment for patient with sight or life threatening eye problems. 
   - We focused on a Clinical Guidelines focusing on ophthalmology as an example.
 
 ### Aims of the solution:
