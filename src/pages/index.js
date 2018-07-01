@@ -2,14 +2,7 @@ import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import { Wrapper } from '../components/wrapper'
-const StyledH3 = styled.h3`
- margin-left: 1rem;
- text-decoration: none;
-`
-
-const Subheading = styled.h4`
-  margin: 0 0 .5rem 2rem;
-`
+import TableContents from "../components/tablecontents.js"
 
 export default ({ data }) => {
 
@@ -17,20 +10,7 @@ export default ({ data }) => {
   return (
     <Wrapper>
       <h1>Guidelines</h1>
-      <div categories={categories}>
-        {categories.map(category => {
-          return (
-            <div>
-              <StyledH3> {category} </StyledH3>
-              <div>
-                {data.allMarkdownRemark.edges.map(({ node }) => {
-                  return (node.frontmatter.category[0] === category) ? <Link to={node.fields.slug}> <Subheading> {node.frontmatter.title} </Subheading> </Link> : null
-                })}
-              </div>
-            </div>
-          )
-        })}
-      </div>
+      <TableContents categories={categories} data={data} />
     </Wrapper>
   );
 };
