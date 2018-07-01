@@ -15,8 +15,24 @@ const Back = styled.span`
 
 export default ({ data }) => {
   const condition = data.markdownRemark;
+  const currentURL = condition.fields.slug;
+  let breadcrumb = currentURL.split("/").filter(Boolean);
+  breadcrumb.shift();
+  breadcrumb.pop();
+
   return (
     <Wrapper>
+      <Link to="/">Home</Link>{
+        breadcrumb.map((item, i) => {
+          const url = currentURL.split(item)[0] + item;
+          return (
+            <span>
+              <span> > </span>
+              <Link key={`key-${i}`} to={url}>{item}</Link>
+            </span>
+          )
+        })
+      }
       <h1>{condition.frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: condition.tableOfContents }} />
 
@@ -28,10 +44,10 @@ export default ({ data }) => {
 
 export const query = graphql`
   query guidelines($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      frontmatter {
-        title
-      }
+        markdownRemark(fields: {slug: {eq: $slug } }) {
+        frontmatter {
+      title
+    }
       fields {
         slug
       }
