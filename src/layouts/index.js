@@ -4,7 +4,12 @@ import Link from 'gatsby-link';
 import Helmet from 'react-helmet'
 import styled from 'styled-components';
 
-import Header from '../components/header'
+const Header = styled.div`
+  background-color: #d6ebf2;
+  padding: .5rem;
+  width: 100%;
+`
+// import Header from '../components/header'
 import './index.css'
 
 const Layout = ({ children, data }) => (
@@ -16,7 +21,7 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
+    <Header><Link to="/">{data.site.siteMetadata.title}</Link></Header>
     <div>
       {children()}
     </div>

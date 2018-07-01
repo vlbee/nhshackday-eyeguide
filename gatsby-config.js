@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Moorfields Clinical Guidance App`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

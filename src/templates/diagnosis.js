@@ -2,8 +2,6 @@ import React from "react";
 
 export default ({ data }) => {
   const condition = data.markdownRemark;
-  // console.log(condition.tableOfContents);
-  console.log(condition.html)
   return (
     < div >
       <h1>{condition.frontmatter.title}</h1>
