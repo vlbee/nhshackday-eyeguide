@@ -27,7 +27,6 @@ export default ({ data }) => {
                   return (node.frontmatter.category[0] === category) ? <Link to={node.fields.slug}> <Subheading> {node.frontmatter.title} </Subheading> </Link> : null
                 })}
               </div>
-
             </div>
           )
         })}
