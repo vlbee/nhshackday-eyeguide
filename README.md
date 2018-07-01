@@ -31,7 +31,14 @@ Dr Elizabeth is a new Junior doctor starting at a new trust who drew the short s
 
 #### User Journey
 
-Dr Elizabeth pre-downloaded the app on her phone before her first day.  She logs-in and within two clicks she is able to get the information she needs to do her job safetly and stress free.
+##### Maintainer
+1. Maintainer generates Markdown document from the Clinical Guidelines (either using a PDF to markdown generator, or manually)
+2. Uploads Markdown document onto the app via GitHub
+
+##### User
+1. Dr Elizabeth pre-downloaded the app on her phone before her first day. 
+2. She logs-in and within two clicks she is able to get the information she needs to do her job safetly and stress free.
+
 
 #### User Stories
 
