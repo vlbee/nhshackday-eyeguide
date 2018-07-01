@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet'
-import styled from 'styled-components';
+import { Header } from '../components/header'
+import { Wrapper } from '../components/wrapper'
 
-import Header from '../components/header'
 import './index.css'
 
 const Layout = ({ children, data }) => (
@@ -16,7 +16,11 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
+    <Header>
+      <Wrapper>
+        <Link to="/">{data.site.siteMetadata.title}</Link>
+      </Wrapper>
+    </Header>
     <div>
       {children()}
     </div>

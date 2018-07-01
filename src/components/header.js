@@ -1,33 +1,15 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import styled from "styled-components"
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </div>
-)
+export const Header = styled.div`
+  background-color: #f2f4f7;
+  padding: .5rem;
+  color: inherit;
 
-export default Header
+  a:visited, a:active, a:link {
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    font-size: .8rem;
+  }
+`

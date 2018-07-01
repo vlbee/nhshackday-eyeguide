@@ -1,16 +1,15 @@
 import React from "react";
+import { Wrapper } from "../components/wrapper"
 
 export default ({ data }) => {
   const condition = data.markdownRemark;
-
   return (
-    < div >
+    <Wrapper>
       <h1>{condition.frontmatter.title}</h1>
-
       <div dangerouslySetInnerHTML={{ __html: condition.tableOfContents }} />
 
       <div dangerouslySetInnerHTML={{ __html: condition.html }} />
-    </div >
+    </Wrapper>
   );
 };
 
@@ -19,6 +18,9 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
+      }
+      fields {
+        slug
       }
       tableOfContents
       html
