@@ -1,23 +1,27 @@
-// TODO
 import React from "react";
 
 export default ({ data }) => {
-  const post = data.markdownRemark;
+  const condition = data.markdownRemark;
+
   return (
-    <div>
-      <h1>{post.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
-    </div>
+    < div >
+      <h1>{condition.frontmatter.title}</h1>
+
+      <div dangerouslySetInnerHTML={{ __html: condition.tableOfContents }} />
+
+      <div dangerouslySetInnerHTML={{ __html: condition.html }} />
+    </div >
   );
 };
 
 export const query = graphql`
-  query BlogPostQuery($slug: String!) {
+  query guidelines($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
       frontmatter {
         title
       }
+      tableOfContents
+      html
     }
   }
 `;
