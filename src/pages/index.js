@@ -14,13 +14,20 @@ export default ({ data }) => {
     <div>
       <div categories={categories}>
         {categories.map(category => {
-          return <Link to=""> <StyledH3> {category} </StyledH3> </Link>
-        })}
-      </div>
-      <div>
-        {data.allMarkdownRemark.edges.map(({ node }) => {
-          console.log(node)
-          return <Link to={node.fields.slug}> <h4> {node.frontmatter.title} </h4> </Link>
+          return (
+            <div>
+              <Link to=""> <StyledH3> {category} </StyledH3> </Link>
+              <div>
+                {data.allMarkdownRemark.edges.map(({ node }) => {
+                  console.log(node)
+                  console.log({ category })
+                  console.log(node.frontmatter.category)
+                  return (node.frontmatter.category[0] === category) ? <Link to={node.fields.slug}> <h4> {node.frontmatter.title} </h4> </Link> : null
+                })}
+              </div>
+
+            </div>
+          )
         })}
       </div>
     </div>
