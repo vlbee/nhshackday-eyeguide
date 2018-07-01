@@ -21,9 +21,11 @@ Built with **[Gatsby](https://www.gatsbyjs.org/)**, a static site generator for 
 `styled-components` and `normalize.css` used for styling.
 **GraphQL** used to process the markdown files. 
 
+Possibilities for further development include converting the site to Progressive Wep App for offline usage on mobile devices and integrate GUI CMS to add and edit content. 
+
 ## The Challenge
 
-The first wednesday of August is called Black Wednesday.  This is the national junior doctor migration day to a new hospital or straight off the boat from medical school.  It is the worst day to work as a doctor, and the worse day to be sick as a patient.  In the UK, each trust, hospital, clinic, subspecialy clinic have their own set of guidelines.  These maticulously designed, evidence based clinical treatment guidelines SHOULD be valuable information that saves patients lives, or sight in our case, but its presentation is so cumbersome it is often unused.  Leading to unstandardised care and managment planning for patients.  Especially on Black Wednesday.
+The first wednesday of August is called Black Wednesday.  This is the national junior doctor migration day to a new hospital or straight off the boat from medical school.  It is the worst day to work as a doctor, and the worse day to be sick as a patient.  In the UK, each trust, hospital, clinic, subspecialy clinic have their own set of guidelines.  These meticulously designed, evidence based clinical treatment guidelines SHOULD be valuable information that saves patients lives, or sight in our case, but its presentation is so cumbersome it is often unused.  Leading to unstandardised care and managment planning for patients.  Especially on Black Wednesday.
 
 Clinical Guidelines used in NHS Trusts are usually incredibly long, in PDF format and to access, requires navigating through different links on the trust intranet on a trust computer (after logging in).
 
@@ -35,18 +37,21 @@ At the London NHS Hackday 2018, our group created **EyeGuide** a reference app t
   
   |                       Guidelines Index                        |                     Guidelines Page                     |
 | :-------------------------------------------------------: | :---------------------------------------------------------: |
-| <img src="https://i.imgur.com/GkTmNxD.png" align="left" width="260" > | <img src="https://i.imgur.com/GkTmNxD.png" align="left" width="260" > |
+| <img src="https://i.imgur.com/GkTmNxD.png" align="left" width="260" > | <img src="https://i.imgur.com/0OSYiPF.png" align="left" width="260" > |
+
+
 
 ### Aims of the solution:
 
 - User friendly
-- The user is able to access the most relevant information within 2 clicks.
-- Can be easliy edited and updated by non-coding trained clinicians when guidelines are available.
+- The user is able to access the most relevant information within 2 clicks
+- Can be easliy edited and updated by non-coding trained clinicians when guidelines are available
 - Provide Key prompting reminders for clinicans for to sight threatening diagnoses 
 - Signpost the clinictian to relevent reference information if needed
 - Contact information of support availabe for the lone doctor working in Emergency Eye clinic.  WHo to call and how to arrange urgent follow-ups.  Minimising the stress of unnecessary admin work.  Allowing the doctor to doctor and see patients.
 - Adhere to the approved trust guidelines rather than relying on google/web searches due to convenice.
-- collect data on which guides are most used and plan teaching/ support sessions tailored to each cohort of junior doctors.  To identify short-falls in the current guideline or teaching programs.
+- Collect data on which guides are most used and plan teaching/ support sessions tailored to each cohort of junior doctors.  To identify short-falls in the current guideline or teaching programs.
+- Usable on mobile device and with poor or no internet connectivity
 
 #### MVP Target User
 
@@ -74,10 +79,16 @@ As a maintainer I can:
 ## Wireframes
 
 The original wireframes: 
-| ![Navigation](https://i.imgur.com/9xk7RMk.png) | ![Search and Contact Pages](https://i.imgur.com/CyCihX5.png) |
+  |                       Guidelines Index                        |                     Guidelines Page                     |
+| :-------------------------------------------------------: | :---------------------------------------------------------: |
+| <img src="https://i.imgur.com/9xk7RMk.png" width="50%" > | <img src="https://i.imgur.com/CyCihX5.png"  width="50%" > |
+
+
 
 Snapshots of what was built:
-| ![Example conditions page](https://i.imgur.com/E8LXpkq.png) |
+  |                       Guidelines Index                        |                
+| :-------------------------------------------------------: | 
+| ![Navigation](https://i.imgur.com/E8LXpkq.png) |
 
 
 
