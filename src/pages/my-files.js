@@ -1,9 +1,9 @@
 import React from "react"
+import { Wrapper } from "../components/wrapper"
 
 export default ({ data }) => {
-  console.log(data)
   return (
-    <div>
+    <Wrapper>
       <h1>My Site's Files</h1>
       <table>
         <thead>
@@ -33,7 +33,7 @@ export default ({ data }) => {
           )}
         </tbody>
       </table>
-    </div>
+    </Wrapper>
   )
 }
 

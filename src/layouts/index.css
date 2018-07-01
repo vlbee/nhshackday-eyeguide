@@ -5,6 +5,8 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-a {
-  font-family: inherit;
+
+body {
+  color: #181b1e;
+  background-color: #fcfcfc;
 }

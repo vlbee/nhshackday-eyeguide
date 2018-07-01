@@ -1,9 +1,10 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { Wrapper } from '../components/wrapper'
 
 export default ({ data }) => {
   return (
-    <div>
+    <Wrapper>
       <h1>
         Guidelines
       </h1>
@@ -18,7 +19,7 @@ export default ({ data }) => {
           </Link>
         </div>
       ))}
-    </div>
+    </Wrapper>
   );
 };
 
