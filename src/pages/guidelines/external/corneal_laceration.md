@@ -1,5 +1,5 @@
 ---
-title: external
+title: Corneal Laceration
 date: "2017-08-21"
 category: ["external"]
 ---

@@ -1,5 +1,5 @@
 ---
-title: neuro
+title: Acute 3rd Nerve
 date: "2017-08-21"
 category: ["neuro"]
 ---

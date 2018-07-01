@@ -1,5 +1,5 @@
 ---
-title: retina
+title: Retinal Detachment
 date: "2017-08-21"
 category: ["retina"]
 ---

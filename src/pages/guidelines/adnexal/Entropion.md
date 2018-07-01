@@ -1,5 +1,5 @@
 ---
-title: adnexal
+title: Entropion
 date: "2017-08-21"
 category: ["adnexal"]
 ---

@@ -1,5 +1,5 @@
 ---
-title: external
+title: Chemical Injury
 date: "2017-08-21"
 category: ["external"]
 ---

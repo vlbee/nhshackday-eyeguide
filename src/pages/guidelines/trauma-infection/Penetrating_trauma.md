@@ -1,5 +1,5 @@
 ---
-title: trauma-infection
+title: Penetrating Trauma
 date: "2017-08-21"
 category: ["trauma-infection"]
 ---

@@ -1,5 +1,5 @@
 ---
-title: medical
+title: GCA
 date: "2017-08-21"
 category: ["medical"]
 ---

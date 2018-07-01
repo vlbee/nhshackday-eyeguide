@@ -1,5 +1,5 @@
 ---
-title: paediatrics
+title: Squint
 date: "2017-08-21"
 category: ["paediatrics"]
 ---

@@ -1,5 +1,5 @@
 ---
-title: retina
+title: Hypertensive Retinopathy
 date: "2017-08-21"
 category: ["retina"]
 ---

@@ -1,5 +1,5 @@
 ---
-title: trauma-infection
+title: Endophthalmitis
 date: "2017-08-21"
 category: ["trauma-infection"]
 ---

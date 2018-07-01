@@ -1,5 +1,5 @@
 ---
-title: adnexal
+title: Thyroid eye disease
 date: "2017-08-21"
 category: ["adnexal"]
 ---

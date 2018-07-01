@@ -1,5 +1,5 @@
 ---
-title: neuro
+title: Ischaemic Optic Neuropathy
 date: "2017-08-21"
 category: ["neuro"]
 ---
