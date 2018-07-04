@@ -6,6 +6,7 @@ const StyledH3 = styled.h3`
  margin-left: 1rem;
  text-decoration: none;
  cursor: pointer;
+ margin-bottom: .5rem;
 `
 const Subheading = styled.h4`
   margin: 0 0 .5rem 2rem;
@@ -24,7 +25,7 @@ class TableContents extends React.Component {
   }
 
   handleClick = (category) => {
-    this.setState({ clicked: category })
+    category === this.state.clicked ? this.setState({ clicked: '' }) : this.setState({ clicked: category });
   }
 
 
