@@ -18,6 +18,13 @@ const Margin = styled.div`
   margin-top: 2rem;
   margin-bottom: 1rem;
 `
+const TableOfContents = styled.div`
+  li {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+  }
+  margin-bottom: 3rem;
+`
 
 export default ({ data }) => {
   const condition = data.markdownRemark;
@@ -43,7 +50,7 @@ export default ({ data }) => {
         }
       </Margin>
       <h1>{condition.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: deletePTag(condition.tableOfContents) }} />
+      <TableOfContents dangerouslySetInnerHTML={{ __html: deletePTag(condition.tableOfContents) }} />
       <div dangerouslySetInnerHTML={{ __html: condition.html }} />
       <Link to={condition.fields.slug}><Back>Back to top</Back></Link>
     </Wrapper>
