@@ -31,12 +31,10 @@ class TableContents extends React.Component {
   }
 
 
-  componentWillMount() {
-    if (window) {
-      const queryCategory = window.location.href.replace(window.origin + '/?category=', '');
-      // const queryCategory = queryString.parse(window.location.href.replace(window.origin + '/', '')).category;
-      queryCategory && this.setState({ clicked: queryCategory })
-    }
+  componentDidMount() {
+    const queryCategory = window.location.href.replace(window.origin + '/?category=', '');
+    // const queryCategory = queryString.parse(window.location.href.replace(window.origin + '/', '')).category;
+    queryCategory && this.setState({ clicked: queryCategory })
   }
 
   render() {
