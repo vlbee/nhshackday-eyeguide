@@ -20,7 +20,7 @@ export default ({ currentURL }) => {
           return (
             <span>
               <span> > </span>
-              <Link key={`key-${i}`} to="/">{item}</Link>
+              <Link key={`key-${i}`} to={`/?category=${item}`}>{item}</Link>
             </span>
           )
         })
