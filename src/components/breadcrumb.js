@@ -1,6 +1,7 @@
 import Link from "gatsby-link";
 import styled from "styled-components";
 import React from "react";
+import titleCase from '../utils/titleCase'
 
 const Margin = styled.div`
 margin-top: 2rem;
@@ -20,7 +21,7 @@ export default ({ currentURL }) => {
           return (
             <span>
               <span> > </span>
-              <Link key={`key-${i}`} to={url}>{item}</Link>
+              <Link key={`key-${i}`} to={titleCase(url)}>{titleCase(item)}</Link>
             </span>
           )
         })

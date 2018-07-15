@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+import titleCase from '../utils/titleCase'
+
 
 const StyledH3 = styled.h3`
  margin-left: 1rem;
@@ -37,7 +39,7 @@ class TableContents extends React.Component {
         {categories.map(category => {
           return (
             <div>
-              <StyledH3 onClick={() => this.handleClick(category)}> {category} </StyledH3>
+              <StyledH3 onClick={() => this.handleClick(category)}> {titleCase(category)} </StyledH3>
               <div>
                 {
                   this.state.clicked === category ?
