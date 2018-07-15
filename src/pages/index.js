@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Wrapper } from '../components/wrapper'
-import TableContents from "../components/tablecontents.js"
+import TableContents from "../components/tablecontents"
 
 export default ({ data }) => {
 
