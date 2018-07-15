@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+const queryString = require('query-string');
 import titleCase from '../utils/titleCase'
-
 
 const StyledH3 = styled.h3`
  margin-left: 1rem;
@@ -27,9 +27,14 @@ class TableContents extends React.Component {
   }
 
   handleClick = (category) => {
-    category === this.state.clicked ? this.setState({ clicked: '' }) : this.setState({ clicked: category });
+    category === this.state.clicked ? this.setState({ clicked: "" }) : this.setState({ clicked: category });
   }
 
+
+  componentWillMount() {
+    const queryCategory = queryString.parse(window.location.href.replace(window.origin + '/', '')).category;
+    queryCategory && this.setState({ clicked: queryCategory })
+  }
 
   render() {
     const data = this.props.data;

@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import Link from 'gatsby-link'
-import styled from 'styled-components'
 import { Wrapper } from '../components/wrapper'
 import TableContents from "../components/tablecontents.js"
 
@@ -10,7 +8,6 @@ export default ({ data }) => {
   return (
     <Wrapper>
       <h1>Guidelines</h1>
-
       <TableContents categories={categories} data={data} />
     </Wrapper>
   );

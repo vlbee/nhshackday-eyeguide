@@ -21,7 +21,7 @@ export default ({ currentURL }) => {
           return (
             <span>
               <span> > </span>
-              <Link key={`key-${i}`} to={titleCase(url)}>{titleCase(item)}</Link>
+              <Link key={`key-${i}`} to={`/?category=${item}`}>{titleCase(item)}</Link>
             </span>
           )
         })
