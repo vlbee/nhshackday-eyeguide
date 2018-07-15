@@ -1,7 +1,8 @@
 import React from "react";
 import { Wrapper } from "../components/wrapper"
 import Link from 'gatsby-link';
-import styled from "styled-components";
+import styled from "styled-components"
+import deletePTag from '../utils/deletePTag'
 import Breadcrumb from "../components/breadcrumb";
 
 const Back = styled.span`
@@ -13,6 +14,13 @@ const Back = styled.span`
  text-decoration: underline;
  font-weight: 700;
 `
+const TableOfContents = styled.div`
+  li {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+  }
+  margin-bottom: 3rem;
+`
 
 
 export default ({ data }) => {
@@ -22,8 +30,7 @@ export default ({ data }) => {
     <Wrapper>
       <Breadcrumb currentURL={condition.fields.slug} />
       <h1>{condition.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: condition.tableOfContents }} />
-
+      <TableOfContents dangerouslySetInnerHTML={{ __html: deletePTag(condition.tableOfContents) }} />
       <div dangerouslySetInnerHTML={{ __html: condition.html }} />
       <Link to={condition.fields.slug}><Back>Back to top</Back></Link>
     </Wrapper>
