@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-const queryString = require('query-string');
+import queryString from 'query-string';
 import titleCase from '../utils/titleCase'
 
 const StyledH3 = styled.h3`
