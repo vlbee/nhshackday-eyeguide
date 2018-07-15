@@ -4,14 +4,20 @@ import styled from 'styled-components'
 import titleCase from '../utils/titleCase'
 
 
-const StyledH3 = styled.h3`
- margin-left: 1rem;
- text-decoration: underline;
- cursor: pointer;
- margin-bottom: .5rem;
+const Category = styled.h3`
+  display: inline-block;
+  margin: .6rem 0rem .6rem 1rem;
+  text-decoration: underline;
+  cursor: pointer;
 `
-const Subheading = styled.h4`
-  margin: 0 0 .5rem 2rem;
+const StyledList = styled.ul`
+  margin: 0;
+`
+
+const StyledListItem = styled.li`
+  list-style: none;
+  margin: 0 0 .5rem 0rem;
+  font-weight: 700;
 `
 
 const Hidden = styled.div`
@@ -31,6 +37,11 @@ class TableContents extends React.Component {
   }
 
 
+  componentDidMount() {
+    const queryCategory = window.location.href.replace(window.origin + '/?category=', '');
+    queryCategory && this.setState({ clicked: queryCategory })
+  }
+
   render() {
     const data = this.props.data;
     const categories = this.props.categories;
@@ -39,16 +50,16 @@ class TableContents extends React.Component {
         {categories.map(category => {
           return (
             <div>
-              <StyledH3 onClick={() => this.handleClick(category)}> {titleCase(category)} </StyledH3>
-              <div>
+              <Category tabIndex="1" onClick={() => this.handleClick(category)} onKeyDown={(e) => { e.keyCode === 13 ? this.handleClick(category) : null }}> {titleCase(category)} </Category>
+              <StyledList>
                 {
                   this.state.clicked === category ?
                     data.allMarkdownRemark.edges.map(({ node }) => {
-                      return (node.frontmatter.category[0] === category) ? <Link to={node.fields.slug}> <Subheading> {node.frontmatter.title} </Subheading> </Link> : null
+                      return (node.frontmatter.category[0] === category) ? <Link tabIndex="1" to={node.fields.slug}> <StyledListItem> {node.frontmatter.title} </StyledListItem> </Link> : null
                     })
                     : ''
                 }
-              </div>
+              </StyledList>
             </div>
           )
         })}

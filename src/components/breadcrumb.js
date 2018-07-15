@@ -19,9 +19,9 @@ export default ({ currentURL }) => {
         breadcrumb.map((item, i) => {
           const url = currentURL.split(item)[0] + item;
           return (
-            <span>
-              <span> > </span>
-              <Link key={`key-${i}`} to={titleCase(url)}>{titleCase(item)}</Link>
+            <span key={`key-${i}`} >
+              <span key={`key-${i}`} > > </span>
+              <Link key={`key-${i}`} to={`/?category=${item}`}>{titleCase(item)}</Link>
             </span>
           )
         })

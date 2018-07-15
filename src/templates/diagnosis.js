@@ -14,7 +14,7 @@ const Back = styled.span`
  text-decoration: underline;
  font-weight: 700;
 `
-const TableOfContents = styled.div`
+const PageTOC = styled.div`
   li {
     margin-top: .5rem;
     margin-bottom: .5rem;
@@ -34,7 +34,7 @@ export default ({ data }) => {
     <Wrapper>
       <Breadcrumb currentURL={condition.fields.slug} />
       <h1>{condition.frontmatter.title}</h1>
-      <TableOfContents dangerouslySetInnerHTML={{ __html: deletePTag(condition.tableOfContents) }} />
+      <PageTOC dangerouslySetInnerHTML={{ __html: deletePTag(condition.tableOfContents) }} />
       <div dangerouslySetInnerHTML={{ __html: condition.html }} />
       <br />
       <LastUpdated>Last Updated: {condition.frontmatter.date}</LastUpdated>
