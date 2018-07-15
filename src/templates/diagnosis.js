@@ -14,12 +14,16 @@ const Back = styled.span`
  text-decoration: underline;
  font-weight: 700;
 `
-const TableOfContents = styled.div`
+const PageTOC = styled.div`
   li {
     margin-top: .5rem;
     margin-bottom: .5rem;
   }
   margin-bottom: 3rem;
+`
+
+const LastUpdated = styled.p`
+  font-style: italic;
 `
 
 
@@ -30,19 +34,23 @@ export default ({ data }) => {
     <Wrapper>
       <Breadcrumb currentURL={condition.fields.slug} />
       <h1>{condition.frontmatter.title}</h1>
-      <TableOfContents dangerouslySetInnerHTML={{ __html: deletePTag(condition.tableOfContents) }} />
+      <PageTOC dangerouslySetInnerHTML={{ __html: deletePTag(condition.tableOfContents) }} />
       <div dangerouslySetInnerHTML={{ __html: condition.html }} />
+      <br />
+      <LastUpdated>Last Updated: {condition.frontmatter.date}</LastUpdated>
+
       <Link to={condition.fields.slug}><Back>Back to top</Back></Link>
-    </Wrapper>
+    </Wrapper >
   );
 };
 
 export const query = graphql`
   query guidelines($slug: String!) {
-        markdownRemark(fields: {slug: {eq: $slug } }) {
-        frontmatter {
-      title
-    }
+    markdownRemark(fields: {slug: {eq: $slug } }) {
+      frontmatter {
+        title
+        date
+      }
       fields {
         slug
       }
