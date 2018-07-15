@@ -2,6 +2,8 @@ import React from "react";
 import { Wrapper } from "../components/wrapper"
 import Link from 'gatsby-link';
 import styled from "styled-components"
+import deletePTag from '../utils/deletePTag'
+
 
 const Back = styled.span`
  position: fixed;
@@ -24,6 +26,7 @@ export default ({ data }) => {
   breadcrumb.shift();
   breadcrumb.pop();
 
+
   return (
     <Wrapper>
       <Margin>
@@ -40,8 +43,7 @@ export default ({ data }) => {
         }
       </Margin>
       <h1>{condition.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: condition.tableOfContents }} />
-
+      <div dangerouslySetInnerHTML={{ __html: deletePTag(condition.tableOfContents) }} />
       <div dangerouslySetInnerHTML={{ __html: condition.html }} />
       <Link to={condition.fields.slug}><Back>Back to top</Back></Link>
     </Wrapper>
