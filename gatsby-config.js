@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Emergency EyeGuide`,
+    title: `Emergency Eye Guide`,
+    description: `This is a demo Hackathon project and intended for use by medically trained professionals only`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
