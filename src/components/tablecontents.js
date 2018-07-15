@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import queryString from 'query-string';
+// import queryString from 'query-string';
 import titleCase from '../utils/titleCase'
 
 const StyledH3 = styled.h3`
@@ -32,7 +32,8 @@ class TableContents extends React.Component {
 
 
   componentWillMount() {
-    const queryCategory = queryString.parse(window.location.href.replace(window.origin + '/', '')).category;
+    const queryCategory = window.location.href.replace(window.origin + '/?category=', '');
+    // const queryCategory = queryString.parse(window.location.href.replace(window.origin + '/', '')).category;
     queryCategory && this.setState({ clicked: queryCategory })
   }
 
