@@ -4,11 +4,16 @@ import Link from 'gatsby-link';
 import Helmet from 'react-helmet'
 import { Header } from '../components/header'
 import { Wrapper } from '../components/wrapper'
+import styled from "styled-components"
+
+const Description = styled.p`
+  font-size: .7rem;
+  margin-top: .4rem;
+`
 
 import './index.css'
 
 const Layout = ({ children, data }) => (
-
   <div>
     <Helmet
       title={data.site.siteMetadata.title}
@@ -20,6 +25,7 @@ const Layout = ({ children, data }) => (
     <Header>
       <Wrapper>
         <Link to="/">{data.site.siteMetadata.title}</Link>
+        <Description>{data.site.siteMetadata.description}</Description>
       </Wrapper>
     </Header>
     <div>
@@ -39,6 +45,7 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        description
       }
     }
   }
