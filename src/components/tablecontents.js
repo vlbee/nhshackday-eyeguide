@@ -33,10 +33,14 @@ class TableContents extends React.Component {
   }
 
   handleClick = (category) => {
-    console.log()
     category === this.state.clicked ? this.setState({ clicked: '' }) : this.setState({ clicked: category });
   }
 
+
+  componentDidMount() {
+    const queryCategory = window.location.href.replace(window.origin + '/?category=', '');
+    queryCategory && this.setState({ clicked: queryCategory })
+  }
 
   render() {
     const data = this.props.data;
