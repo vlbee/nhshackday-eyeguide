@@ -22,6 +22,10 @@ const PageTOC = styled.div`
   margin-bottom: 3rem;
 `
 
+const LastUpdated = styled.p`
+  font-style: italic;
+`
+
 
 export default ({ data }) => {
   const condition = data.markdownRemark;
@@ -32,17 +36,21 @@ export default ({ data }) => {
       <h1>{condition.frontmatter.title}</h1>
       <PageTOC dangerouslySetInnerHTML={{ __html: deletePTag(condition.tableOfContents) }} />
       <div dangerouslySetInnerHTML={{ __html: condition.html }} />
+      <br />
+      <LastUpdated>Last Updated: {condition.frontmatter.date}</LastUpdated>
+
       <Link to={condition.fields.slug}><Back>Back to top</Back></Link>
-    </Wrapper>
+    </Wrapper >
   );
 };
 
 export const query = graphql`
   query guidelines($slug: String!) {
-        markdownRemark(fields: {slug: {eq: $slug } }) {
-        frontmatter {
-      title
-    }
+    markdownRemark(fields: {slug: {eq: $slug } }) {
+      frontmatter {
+        title
+        date
+      }
       fields {
         slug
       }
