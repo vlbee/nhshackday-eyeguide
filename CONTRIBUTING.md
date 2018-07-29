@@ -22,7 +22,6 @@ This is a guide on how to add or update Guideline markdown content to [Eye Guide
 
 ## WRITING NEW GUIDELINES IN MARKDOWN
 
-⚠️ Ensure you use the [TEMPLATE](https://raw.githubusercontent.com/vlbee/nhshackday-eyeguide/master/TEMPLATE.md) format provided. 
 
 1. New guidelines need to be written using Markdown. Markdown is a way to write content for the web, that is regular text with some symbols (e.g. asterisks ( * ) to indicate certain things such as bullet points).
     * To learn writing in Markdown follow [this tutorial](https://www.markdowntutorial.com/)
