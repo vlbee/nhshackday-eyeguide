@@ -2,14 +2,14 @@
 
 ---
 **Table of contents**
-* [Background](#BACKGROUND)
-* [Writing new guidelines in Markdown](#WRITING-NEW-GUIDELINES-IN-MARKDOWN)
-* [Navigating to the guidelines folder](#NAVIGATING-TO-THE-GUIDELINES-FOLDER)
-* [Adding a new Markdown file for a new condition](#ADDING-A-NEW-MARKDOWN-FILE-FOR-A-NEW-CONDITION)
-* [Editing an existing condition](#EDITING-AN-EXISTING-CONDITION)
-* [Deleting a file](#DELETING-A-FILE)
-* [Adding a new category](#ADDING-A-NEW-CATEGORY)
-* [Questions or Problems?](#QUESTIONS-OR-PROBLEMS)
+* [Background](https://github.com/vlbee/nhshackday-eyeguide/blob/master/CONTRIBUTING.md#background)
+* [Writing new guidelines in Markdown](https://github.com/vlbee/nhshackday-eyeguide/blob/master/CONTRIBUTING.md#writing-new-guidelines-in-markdown)
+* [Navigating to the guidelines folder](https://github.com/vlbee/nhshackday-eyeguide/blob/master/CONTRIBUTING.md#navigating-to-the-guidelines-folder)
+* [Adding a new Markdown file for a new condition](https://github.com/vlbee/nhshackday-eyeguide/blob/master/CONTRIBUTING.md#adding-a-new-markdown-file-for-a-new-condition)
+* [Editing an existing condition](https://github.com/vlbee/nhshackday-eyeguide/blob/master/CONTRIBUTING.md#editing-an-existing-condition)
+* [Deleting a file](https://github.com/vlbee/nhshackday-eyeguide/blob/master/CONTRIBUTING.md#deleting-a-file)
+* [Adding a new category](https://github.com/vlbee/nhshackday-eyeguide/blob/master/CONTRIBUTING.md#adding-a-new-category)
+* [Questions or Problems?](https://github.com/vlbee/nhshackday-eyeguide/blob/master/CONTRIBUTING.md#questions-or-problems)
 ---
 
 ## BACKGROUND
