@@ -37,7 +37,9 @@ This is a guide on how to add or update Guideline markdown content to [Eye Guide
         * `date: "2017-08-21"` - this date will appear at the bottom of your draft as the *Last Updated -date-*. Must be in `YYYY-MM-DD` format and in quotes.
         * `category: ["name of the category"]` - must be lowercase, in quotes and square brackets. 
 
-<img src="https://i.imgur.com/xCGAKr7.png" width="50%" style="display: block; margin: 3rem auto;"/>
+<p align="center">
+  <img src="https://i.imgur.com/xCGAKr7.png" width="400"/>
+</p>
 
 
 *NOTES:*
